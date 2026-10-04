@@ -1,4 +1,5 @@
-import React,{useState} from "react"
+
+import '../css/MovieCard.css'
 
 function MovieCard({movie}){
 
