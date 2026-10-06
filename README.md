@@ -1,16 +1,96 @@
-# React + Vite
+# Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A React app for browsing popular movies, searching the TMDB catalogue, and saving favourite movies in your browser.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse popular movies from TMDB
+- Search for movies
+- View movie posters, titles, and release years
+- Add and remove movies from favourites
+- Save favourites in browser local storage
+- Navigate between the Home and Favourites pages
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- React Router
+- Vite
+- TMDB API
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Prerequisites
+
+- Node.js and npm
+- A TMDB API key
+
+### Installation
+
+1. Clone the repository and go to the app directory:
+
+   ```bash
+   git clone <repository-url>
+   cd movie-app
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env.local` file in the project root and add your TMDB configuration:
+
+   ```env
+   VITE_TMDB_BASE_URL=https://api.themoviedb.org/3
+   VITE_TMDB_API_KEY=your_tmdb_api_key
+   ```
+
+   Replace `your_tmdb_api_key` with your TMDB API key. Do not commit real credentials to a public repository.
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Open the local URL printed in the terminal.
+
+## Available Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the development server |
+| `npm run build` | Build the app for production |
+| `npm run preview` | Preview the production build locally |
+| `npm run lint` | Run Oxlint |
+
+## Project Structure
+
+```text
+src/
+├── assets/       # Images and other static assets
+├── components/   # Shared UI components
+├── contexts/     # Shared movie and favourites state
+├── css/          # Stylesheets
+├── pages/        # Home and Favourites pages
+├── services/     # TMDB API requests
+├── App.jsx       # App routes and shared layout
+└── main.jsx      # React app entry point
+```
+
+## Favourites
+
+Favourite movies are stored in the browser's local storage, so they remain available across page reloads in the same browser.
+
+## API
+
+Movie data is provided by [The Movie Database (TMDB)](https://www.themoviedb.org/). The app uses the popular movies and movie search endpoints.
+
+The API key is used by the frontend, so it is included in browser requests. Use a browser-appropriate TMDB key and configure any available usage restrictions; do not put private server credentials in Vite environment variables.
+
+## License
+
+No license is specified for this project.
+```
