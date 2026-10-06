@@ -1,31 +1,31 @@
-# Movie App
+# 🎬 Movie App
 
-A React app for browsing popular movies, searching the TMDB catalogue, and saving favourite movies in your browser.
+A React web application for browsing popular movies, searching the TMDB catalogue, and saving favourite movies directly in your browser.
 
-## Features
+## ⚡ Features
 
-- Browse popular movies from TMDB
-- Search for movies
-- View movie posters, titles, and release years
-- Add and remove movies from favourites
-- Save favourites in browser local storage
-- Navigate between the Home and Favourites pages
+- 🌟 **Browse Popular Movies:** Discover trending and popular movies fetched live from TMDB.
+- 🔍 **Search Capabilities:** Search for any movie title across the TMDB database.
+- 📱 **Detailed Views:** Display movie posters, titles, and release years.
+- ❤️ **Favourites Management:** Quickly add or remove movies from your personal favourites list.
+- 💾 **Persistent Storage:** Favourites are automatically saved to browser local storage.
+- 🧭 **Smooth Navigation:** Seamlessly navigate between the Home and Favourites pages.
 
-## Built With
+## 🛠️ Built With
 
-- React
-- React Router
-- Vite
-- TMDB API
+- ⚛️ **React** - User Interface
+- 🛣️ **React Router** - Navigation & Routing
+- ⚡ **Vite** - Build Tool & Development Server
+- 🎬 **TMDB API** - Movie Data Source
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### 📋 Prerequisites
 
-- Node.js and npm
-- A TMDB API key
+- **Node.js** and **npm** installed on your system.
+- A **TMDB API key** ([Get one here](https://www.themoviedb.org/documentation/api)).
 
-### Installation
+### 📥 Installation
 
 1. Clone the repository and go to the app directory:
 
@@ -89,6 +89,9 @@ Favourite movies are stored in the browser's local storage, so they remain avail
 Movie data is provided by [The Movie Database (TMDB)](https://www.themoviedb.org/). The app uses the popular movies and movie search endpoints.
 
 The API key is used by the frontend, so it is included in browser requests. Use a browser-appropriate TMDB key and configure any available usage restrictions; do not put private server credentials in Vite environment variables.
+
+## Author
+Rayan Mendis- IT undergraduate at Curtin University
 
 ## License
 
