@@ -30,7 +30,7 @@ A React app for browsing popular movies, searching the TMDB catalogue, and savin
 1. Clone the repository and go to the app directory:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/RayanMendis56/Movie-App
    cd movie-app
    ```
 
